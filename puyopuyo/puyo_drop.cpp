@@ -1,4 +1,5 @@
 #include "mainwindow.h"
+#include "clear.h"
 #include<QRandomGenerator>
 //检测可否落到此处
 bool MainWindow::checkhere(int x,int y){
@@ -28,6 +29,7 @@ void MainWindow::autoDrop(){
     }
     else{
         fixPuyo();
+        clearAll(map);//新加的消除噗哟程序！
         newPuyo();
     }
     update();//刷新界面

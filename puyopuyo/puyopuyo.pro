@@ -7,12 +7,14 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    clear.cpp \
     main.cpp \
     mainwindow.cpp \
     puyo_draw.cpp \
     puyo_drop.cpp
 
 HEADERS += \
+    clear.h \
     mainwindow.h \
     puyo_draw.h \
     puyo_drop.h

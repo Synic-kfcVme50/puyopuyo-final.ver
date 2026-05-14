@@ -28,7 +28,7 @@ void MainWindow::paintEvent(QPaintEvent*event){
     for(int i=0;i<ROW;i++){
         for(int j=0;j<COL;j++){
             int c=map[i][j];
-            if(c!=EMPTY){//意思是 这里应该有噗哟，所以要画
+            if(c!=EMPTY){//意思是 这里应该要有噗哟，所以要画
                 p.setBrush(colors[c]);
                 p.drawEllipse(j*CELL+2,i*CELL+2,CELL-4,CELL-4);
             }
